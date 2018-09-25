@@ -1,8 +1,5 @@
 .cart {
-    display: none;
-    @include desktop {
-        display: block;
-    }
+    display: block;
 
     &_button {
         background: url(#{$img-path}/cart.svg) no-repeat 0 center;
@@ -29,7 +26,7 @@
         }
     }
     &_dropdown {
-        background: $light_color;
+        background: $color;
         position: absolute;
         right: 0;
         top: 100%;

@@ -1,4 +1,4 @@
-.recent-posts {
+.mini-menu {
     padding: 15px 20px;
     border: 2px solid $bright_color;
     border-radius: 5px;
@@ -11,7 +11,8 @@
     &_item {
         @extend %clearfix;
         color: $color;
-        display: block;
+        display: flex;
+        align-items: center;
         padding: 0 0 12px;
 
         &:hover {
@@ -19,19 +20,23 @@
         }
     }
     &_item-image {
-        border: 2px solid $bright_color;
-        border-radius: 50%;
-        height: 65px;
-        width: 65px;
+        height: 120px;
+        width: 120px;
         margin: 0 20px 0 0;
         float: left;
     }
     &_item-title {
-        font-weight: 900;
+        font-size: 18px;
+        font-weight: 700;
         display: block;
-        margin: 0 0 0 91px;
+    }
+    &_item-price {
+        font-size: 18px;
+        font-weight: 700;
+        display: block;
+        color: $bright_color;
     }
     &_item-text {
-        margin: 0 0 0 91px;
+        text-align: center;
     }
 }

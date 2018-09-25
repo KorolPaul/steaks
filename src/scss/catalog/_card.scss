@@ -6,30 +6,18 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    @include tablet {
-        width: 48%;
-    }
-    @include desktop {
-        width: 30%;
-    }
+    width: 30%;
 
     &__wide,
     &__main {
-        display: block;
-        width: 100%;
-        @include desktop {
-            flex-direction: row;
-            display: flex;
-        }
+        flex-direction: row;
+        display: flex;
     }
 
     .catalog_grid__full & {
         width: 100%;
         @include tablet {
             width: 48%;
-        }
-        @include desktop {
-            width: 23%;
         }
     }
     .menu & {
@@ -58,17 +46,6 @@
                 width: 260px;
                 flex-shrink: 0;
             }
-        }
-        .product-card__main & {
-            flex-shrink: 0;
-            width: 100%;
-            @include desktop {
-                width: 48%;
-                flex-shrink: 0;
-            }
-        }
-        .product-card__rtl & {
-            order: 2;
         }
     }
     &_text {
@@ -146,7 +123,7 @@
         }
     }
     &_stripe {
-        color: $light_color;
+        color: $color;
         font: bold 16px $font-family__heading;
         position: absolute;
         top: 13px;

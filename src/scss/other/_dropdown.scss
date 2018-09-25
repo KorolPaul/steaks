@@ -1,0 +1,23 @@
+.dropdown {
+    display: inline-block;
+
+    &_link {
+        background: transparent;
+        border: none;
+        color: $color;
+        font-size: $font-size__small;
+        padding: 0 20px 0 15px;
+        position: relative;
+
+        &::after {
+            content: '';
+            background: $color url(#{$img_path}/down.svg) center center no-repeat;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 14px;
+            width: 14px;
+        }
+    }
+}

@@ -54,7 +54,7 @@
         transform: translate(0, -50%);
         @include tablet {
             top: 50%;
-            background: $light_color;
+            background: $color;
             border-radius: 10px;
             box-shadow: 0 2px 5px rbga(0, 0, 0, .3);
             right: auto;
@@ -110,7 +110,7 @@
         border-radius: 10px;
         padding: 30px;
         box-shadow: 0 2px 5px rbga(0, 0, 0, .3);
-        background: $light_color;
+        background: $color;
         @include tablet {
             display: flex;
         }

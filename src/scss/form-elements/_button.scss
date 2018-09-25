@@ -1,12 +1,12 @@
 %button {
     background: transparent;
-    border: 1px solid currentColor;
-    border-radius: 30px;
+    border: 2px solid currentColor;
+    border-radius: 20px;
     cursor: pointer;
-    color: $bright_color;
-    font-family: $font-family__heading;
-    font-weight: bold;
-    padding: 15px 50px;
+    color: $gray_color;
+    font-family: $font-family;
+    font-weight: 600;
+    padding: 10px 45px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -16,35 +16,13 @@
 }
 
 .button,
-button,
+button:not([class]),
 input[type="button"],
 input[type="submit"],  {
     @extend %button;
 
     &:hover {
-        background-color: $bright_color;
-        color: $light_color;
-    }
-}
-
-.button {
-    &__blue {
-        color: $link_color;
-    }
-    &__filled {
-        background-color: $bright_color;
-        color: $light_color;
-
-        &:hover {
-            background-color: #c02055;
-        }
-    }
-    &__filled-blue {
-        background-color: $link_color;
-        color: $light_color;
-
-        &:hover {
-            background-color: $link_color__hover;
-        }
+        background-color: $gray_color;
+        color: $color;
     }
 }

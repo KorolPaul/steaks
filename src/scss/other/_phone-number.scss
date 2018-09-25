@@ -1,7 +1,21 @@
 .phone-number {
-    background: url(#{$img-path}/phone.svg) no-repeat 0 2px ;
-    color: $light_color;
-    font-family: $font-family__heading;
-    padding: 0 0 0 15px;
+    color: $color;
+    font-size: 22px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 95px;
+    position: relative;
     white-space: nowrap;
+
+    &::before {
+        content: '';
+        background: $color url(#{$img-path}/phone.svg) no-repeat center center;
+        border-radius: 50%;
+        height: 100%;
+        width: 60px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }

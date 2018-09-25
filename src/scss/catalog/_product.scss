@@ -6,9 +6,6 @@
 
     &_gallery {
         margin: 0 0 50px;
-        @include desktop {
-            margin: 0;
-        }
     }
     &_gallery-image {
         overflow: hidden;
@@ -57,11 +54,11 @@
         }
     }
     &_table-text {
-        background: $light_color;
+        background: $color;
         padding: 0 8px 0 0;
     }
     &_table-value {
-        background: $light_color;
+        background: $color;
         padding: 0 0 0 8px;
     }
     &_price {

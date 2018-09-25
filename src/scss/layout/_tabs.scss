@@ -23,7 +23,7 @@
         &:hover,
         &.active {
             background: $link_color;
-            color: $light_color;
+            color: $color;
         }
         &:first-child {
             border-left: 1px solid $link_color;

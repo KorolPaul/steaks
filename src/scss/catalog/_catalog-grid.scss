@@ -3,7 +3,7 @@
 
     &_item {
         background: #000;
-        color: $light_color;
+        color: $color;
         font: 72px $font-family__cursive;
         position: relative;
         display: flex;
@@ -13,7 +13,7 @@
         overflow: hidden;
         margin: 0 0 30px; 
         &:hover {
-            color: $light_color;
+            color: $color;
             text-decoration: none;
         }
 
