@@ -3,11 +3,14 @@
     text-align: center;
 
     &_link {
-        font: 20px $font-family__heading;
-        margin: 0 7px;
-        @include tablet {
-            font-size: 26px;
-            margin: 0 13px;
+        color: $color;
+        border: 2px solid $bright_color;
+        font: bold $font-family $font-family__heading;
+        margin: 0 11px;
+        padding: 6px 9px 5px;
+
+        &:hover {
+            text-decoration: none;
         }
     }
 }

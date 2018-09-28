@@ -1,6 +1,12 @@
 .post {
     margin: 0 0 40px;
 
+    &__small {
+        border-bottom: 1px solid $bright_color;
+        padding: 0 0 20px;
+        margin: 0 0 24px;
+    }
+
     &_title {
         @extend %heading-1;
         display: block;

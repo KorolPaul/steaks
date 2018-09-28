@@ -66,9 +66,7 @@
         justify-content: flex-end;
     }
     &_holder {
-        @include tablet {
-            position: relative;
-        }
+        position: relative;
     }
     &_row {
         flex-wrap: nowrap;

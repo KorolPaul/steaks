@@ -1,61 +1,38 @@
 .footer {
-    background: #333;
+    background: #000 url(#{$img_path}/dark-bg.jpg) no-repeat;
+    background-size: 100% auto;
     color: #ccc;
-    padding: 45px 0 0;
+    padding: 40px 0 75px;
+    position: relative;
 
-    &_menu-column-title {
+    &::before {
+        content: '';
+        background: url(#{$img_path}/showcase-bg-top.png) 0 top repeat-x;
+        height: 10px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &_logo {
+        margin: 0 0 42px;
+    }
+    &_title {
         @extend %heading-2;
         color: $color;
-        margin: 0 0 15px;
+        margin: 0 0 42px;
+        line-height: 1;
     }
-    &_menu-column {
-        margin: 0 0 30px;
-        @include tablet {
-            margin: 0;
-        }
-
-        p {
-            margin: 0 0 13px;
-        }
-        a {
-            color: #ccc;
-            border-bottom: 1px solid currentColor;
-            transition: .2s ease-in-out opacity;
-
-            &:hover {
-                opacity: .6;
-                text-decoration: none;
-            }
-        }
-    }
-    &_username {
+    &_subtitle {
         color: $color;
         font-weight: bold;
-        font-style: italic;
     }
     &_social {
-        margin: 0 0 25px;
+        padding: 20px 0;
     }
     &_social-icon {
-        margin: 0 8px 0 0;
-    } 
-    &_payment {
-        margin: 25px 0 0;
-    }
-    &_card {
-        margin: 0 10px 0 0;
-    }
-    &_bottom {
-        border-top: 1px solid #616161;
-        padding: 15px 0;
-        text-align: center;
-        @include tablet {
-            margin: 50px 0 0;
-        }
-    }
-    &_copyright {
-        color: #888888;
-        font-family: $font-family__heading;
-        margin: 0;
+        margin: 0 20px 0 0;
     }
 }

@@ -4,9 +4,20 @@
     border-radius: 5px;
     margin: 0 0 40px;
 
+    .footer & {
+        border: none;
+        padding: 0 10px 0 0;
+    }
+
     &_title {
         @extend %heading-2;
         margin-bottom: 20px;
+
+        .footer & {
+            color: $color;
+            margin: 0 0 42px;
+            line-height: 1;
+        }
     }
     &_item {
         @extend %clearfix;
