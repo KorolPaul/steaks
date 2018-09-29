@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.625" viewBox="0 0 14 8.625">
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -32,8 +32,9 @@
       .cls-1 {
         fill: #fff;
         fill-rule: evenodd;
+        opacity: 0.87;
       }
     </style>
   </defs>
-  <path id="arrow_down" class="cls-1" d="M1501.63,735.172l5.37,5.381,5.37-5.381,1.64,1.637-7.01,7.019-7.01-7.019Z" transform="translate(-1500 -735.188)"/>
+  <path id="call" class="cls-1" d="M1109.75,941l7.75-7.752-7.75-7.753v4.652h-6.2v6.2h6.2V941Zm3.1,6.976a17.554,17.554,0,0,1-5.58-.93,1.916,1.916,0,0,0-1.55.31l-3.41,3.411a24.11,24.11,0,0,1-10.23-10.233l3.41-3.41a1.242,1.242,0,0,0,.31-1.551,20.645,20.645,0,0,1-.78-5.426,1.465,1.465,0,0,0-1.55-1.551h-5.42a1.465,1.465,0,0,0-1.55,1.551,26.332,26.332,0,0,0,26.35,26.357,1.465,1.465,0,0,0,1.55-1.551v-5.426A1.465,1.465,0,0,0,1112.85,947.976Z" transform="translate(-1086.5 -925.5)"/>
 </svg>

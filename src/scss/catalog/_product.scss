@@ -1,91 +1,80 @@
 .product {
     margin: 0 0 60px;
-    @include tablet {
-        margin: 0 0 100px;
-    }
 
-    &_gallery {
-        margin: 0 0 50px;
-    }
-    &_gallery-image {
-        overflow: hidden;
-        margin: 5px 0 35px;
-
-        img {
-            width: 100%;
-        }
-    }
-    &_gallery-carousel {
+    &_header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 0 24px;
+        border-bottom: 1px solid $bright_color;
+    }
+    &_back {
+        color: $color;
+        font-weight: 600;
+        text-transform: uppercase;
 
-        img {
-            width: 23%;
-
-            &:not(:first-child) {
-                margin: 0 0 0 13px;
-            }
+        &:hover {
+            text-decoration: none;
         }
+    }
+    &_navigation-prev {
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        border: 2px solid $bright_color;
+        border-radius: 50%;
+        background: url("#{$img_path}/prev.svg") 13px center no-repeat;
+        transition: .2s ease-in-out border;
+
+        &:hover {
+            border-color: $color;
+        }
+    }
+    &_navigation-next {
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        border: 2px solid $bright_color;
+        border-radius: 50%;
+        background: url("#{$img_path}/next.svg") 15px center no-repeat;
+        margin: 0 0 0 18px;
+        transition: .2s ease-in-out border;
+
+        &:hover {
+            border-color: $color;
+        }
+    }
+    &_content {
+        padding: 70px 0 0;
+        display: flex;
+        align-items: flex-start;
+    }
+    &_image {
+        margin: 8px 30px 0 0;
     }
     &_title {
-        margin: 0 0 20px;
-    }
-    &_data {
-        display: flex;
-        justify-content: space-between;
-    }
-    &_data-col {
-        width: 48%;
-    }
-    &_data-title {
-        @extend %heading-2;
-    }
-    &_table {
-        width: 100%;
-
-        td {
-            background: url(#{$img_path}/dots.png) repeat-x 0 12px;
-            padding: 2px 0;
-            font-family: $font-family__heading;
-        }
-        td + td {
-            text-align: right;
-        }
-    }
-    &_table-text {
-        background: $color;
-        padding: 0 8px 0 0;
-    }
-    &_table-value {
-        background: $color;
-        padding: 0 0 0 8px;
+        @extend %heading-1;
+        margin: 0 0 16px;
     }
     &_price {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 60px 0 0;
-        padding: 35px 0 0;
-        border-top: 1px solid #e0e0e0;
-    }
-    &_count {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %heading-1;
 
-        .button {
-            margin: 0 0 0 10px;
+        sup {
+            font-size: 16px;
+            margin: 0 0 0 5px;
+            top: -14px;
         }
     }
-    &_price-value {
-        color: $link_color;
-        @extend %heading-2;
+    &_info-bottom {
+        display: flex;
     }
-    &_price-old {
-        font: 16px $font-family__heading;
-        color: #ccc;
-        margin: 0 0 0 3px;
-        text-decoration: line-through;
+    &_button {
+        @extend %button;
+        color: $color;
+        border-color: $bright_color;
+        margin: 5px 0 0 45px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 30px;
     }
 }

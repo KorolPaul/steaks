@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sign up</title>
+    <title>Checkout</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
     <meta property="og:url" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
-    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:type" content="image/jp eg">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="300">
     <meta property="twitter:description" content="">
@@ -33,8 +33,8 @@
                     <div class="col-12 col-md-auto">
                         <div class="working-hours">
                             <span>
-                                Opening hours from 
-                                <span class="working-hours_value">9:00</span> am to 
+                                Opening hours from
+                                <span class="working-hours_value">9:00</span> am to
                                 <span class="working-hours_value">01:00</span> pm
                             </span>
                         </div>
@@ -44,7 +44,7 @@
                             <button class="search_icon"></button>
                             <input type="text" class="search_input" placeholder="Search and hit return...">
                         </div>
-                        
+
                         <div class="dropdown">
                             <button class="dropdown_link">English</button>
                         </div>
@@ -68,7 +68,7 @@
                 </nav>
             </div>
             <img src="src/img/dark-bg.jpg" alt="">
-            <h1 class="header_bottom-title">sign up</h1>
+            <h1 class="header_bottom-title"> STEAK HOUSE CHECKOUT</h1>
         </div>
     </header>
     <div class="content">
@@ -77,61 +77,78 @@
                 <div class="col">
                     <div class="breadcrumbs">
                         <a href="" class="breadcrumbs_link">Home</a>
-                        <span class="breadcrumbs_page">Check in</span>
+                        <span class="breadcrumbs_page">Checkout</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container checkout">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="checkout_header">
+                        <a class="checkout_back" href="/cart.html"><< BACK TO CART</a>
+                        <span>
+                            Are you registered?
+                            <a href="/login.html"> Click here to login</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-8">
-                    <p class="title">CREATE AN ACCOUNT</p>
+                    <p class="checkout_title">YOUR ORDER</p>
                     <form action="" class="form">
                         <div class="form_fields">
                             <div class="form_fields-row">
                                 <div class="form_item form_item__wide">
-                                    <label for="">Name*</label>
-                                    <input type="text" class="form_field">
-                                </div>
-                            </div>
-                            <div class="form_fields-row">
-                                <div class="form_item form_item__wide">
-                                    <label for="">Last name</label>
-                                    <input type="text" class="form_field">
-                                </div>
-                            </div>
-                            <div class="form_fields-row">
-                                <div class="form_item form_item__wide">
-                                    <label for="">E-mail*</label>
-                                    <input type="email" class="form_field">
-                                </div>
-                            </div>
-                            <div class="form_fields-row">
-                                <div class="form_item form_item__wide">
-                                    <label for="">Phone</label>
-                                    <input type="tel" class="form_field">
-                                </div>
-                            </div>
-                            <div class="form_fields-row">
-                                <div class="form_item form_item__wide">
-                                    <label for="">Adress</label>
-                                    <input type="text" class="form_field">
-                                </div>
-                            </div>
-                            <div class="form_fields-row">
-                                <div class="form_item form_item__wide">
-                                    <label for="">Password</label>
-                                    <input type="password" class="form_field">
-                                </div>
-                            </div>
-                            <div class="form_fields-row">
-                                <div class="form_item form_item__wide">
-                                    <label for="">Confirm password</label>
-                                    <input type="password" class="form_field">
+                                    <table class="checkout_table">
+                                        <thead>
+                                            <tr>
+                                                <th>steak</th>
+                                                <th>total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Steak “Norten Crow” <span class="checkout_bright">x 2</span></td>
+                                                <td>$ 25 <sup>80</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Steak “Ribeye” <span class="checkout_bright">x 1</span></td>
+                                                <td>$ 12 <sup>90</sup></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>Shipping</td>
+                                                <td>$ 0 <sup>00</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Promotional code</td>
+                                                <td><span class="checkout_bright">$ -3 <sup>00</sup></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="checkout_payment">
+                                        <p class="checkout_subtitle">PAYMENT METHODS</p>
+                                        <div class="checkout_payment-item">
+                                            <input type="radio" id="payment-1" name="payment" checked>
+                                            <label class="checkout_payment-label" for="payment-1">Payment order in cash</label>
+                                        </div>
+                                        <div class="checkout_payment-item">
+                                            <input type="radio" id="payment-2" name="payment">
+                                            <label class="checkout_payment-label" for="payment-2">PayPal</label>
+                                        </div>
+                                        <div class="checkout_payment-item">
+                                            <img src="src/img/payment.png" alt="">
+                                            <a href="#" class="checkout_payment-link">What is paypal?</a>
+                                        </div>
+                                    </div>
+                                    <p class="checkout_price">Order Total: $ 64<sup>80</sup></p>
                                 </div>
                             </div>
                             <div class="form_item">
-                                <button class="button">check in</button>
+                                <button class="button">checkout</button>
                             </div>
                         </div>
                     </form>
@@ -144,8 +161,11 @@
             <div class="row">
                 <div class="footer_column col-12 col-md-4">
                     <img class="footer_logo" src="src/img/logo.png" alt="">
-                    <p>Hi! My name is John Smith and I am the owner of a family steak house "" Fed cowboy. "Cooking steaks for us it is the business of life. Even my grandfather grilled steaks are excellent. Some recipes steaks are preserved from those times and for them we are preparing our meals.</p>
-                    <p>Here you can enjoy a variety of steaks with different sauces and garnishes. Thank you for choosing "Fed cowboy”</p>
+                    <p>Hi! My name is John Smith and I am the owner of a family steak house "" Fed cowboy. "Cooking
+                        steaks for us it is the business of life. Even my grandfather grilled steaks are excellent.
+                        Some recipes steaks are preserved from those times and for them we are preparing our meals.</p>
+                    <p>Here you can enjoy a variety of steaks with different sauces and garnishes. Thank you for
+                        choosing "Fed cowboy”</p>
                 </div>
                 <div class="footer_column col-12 col-md-4">
                     <div class="recent-posts">
@@ -153,17 +173,20 @@
                         <a href="#" class="recent-posts_item">
                             <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
                             <span class="recent-posts_item-title">How to cook the perfect steak</span>
-                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas temporibus esse illo doloribus maiores </p>
+                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas temporibus esse illo doloribus maiores </p>
                         </a>
                         <a href="#" class="recent-posts_item">
                             <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
                             <span class="recent-posts_item-title">Recipe Ribeye steak</span>
-                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas temporibus esse illo doloribus maiores </p>
+                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas temporibus esse illo doloribus maiores </p>
                         </a>
                         <a href="#" class="recent-posts_item">
                             <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
                             <span class="recent-posts_item-title">Choosing the right meat for steak</span>
-                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas temporibus esse illo doloribus maiores </p>
+                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas temporibus esse illo doloribus maiores </p>
                         </a>
                     </div>
                 </div>

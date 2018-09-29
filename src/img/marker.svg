@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="12" viewBox="0 0 8 12">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="34.25" viewBox="0 0 24 34.25">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description rdf:about=""/>
    </rdf:RDF>
@@ -30,15 +30,11 @@
 <defs>
     <style>
       .cls-1 {
+        fill: #fff;
         fill-rule: evenodd;
-        filter: url(#filter);
+        opacity: 0.87;
       }
     </style>
-    <filter id="filter" x="394" y="25" width="8" height="12" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#fff"/>
-      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
-      <feBlend result="blend" in2="SourceGraphic"/>
-    </filter>
   </defs>
-  <path id="fa-map-marker" class="cls-1" d="M398,30.992a2,2,0,1,1,1.413-.586A1.923,1.923,0,0,1,398,30.992Zm2.827-4.83A4,4,0,0,0,394,28.991a3.289,3.289,0,0,0,.258,1.4l2.849,6.05a0.9,0.9,0,0,0,.363.406,1.009,1.009,0,0,0,1.054,0,0.945,0.945,0,0,0,.371-0.406l2.842-6.05a3.289,3.289,0,0,0,.258-1.4A3.86,3.86,0,0,0,400.824,26.162Z" transform="translate(-394 -25)"/>
+  <path id="placeholder" class="cls-1" d="M532.5,925.864a11.921,11.921,0,0,0-12,11.994c0,8.911,12,22.277,12,22.277s12-13.366,12-22.277A11.921,11.921,0,0,0,532.5,925.864Zm0,16.279a4.284,4.284,0,1,1,4.284-4.285A4.243,4.243,0,0,1,532.5,942.143Z" transform="translate(-520.5 -925.875)"/>
 </svg>

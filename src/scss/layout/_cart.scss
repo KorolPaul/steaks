@@ -1,49 +1,94 @@
 .cart {
-    display: block;
+    
+    &_table {
+        width: 100%;
 
-    &_button {
-        background: url(#{$img-path}/cart.svg) no-repeat 0 center;
-        border: none;
-        display: inline-block;
-        color: $link_color;
-        height: 18px;
-        width: 34px;
-        padding: 0 12px 0 0;
-        position: relative;
-        margin: 0 0 0 10px;
-
-        &::after {
-            content: '▼';
-            font-size: 8px;
-            position: absolute;
-            top: 4px;
-            right: 0;
+        th {
+            border-bottom: 1px solid $bright_color;
+            color: $color;
+            font: 600 $font-size $font-family__heading;
+            padding: 0 30px 40px 0;
+            text-transform: uppercase;
         }
-        &:hover {
-            background-color: transparent;
-            background-image: url(#{$img-path}/cart-purple.svg);
-            color: $bright_color;
+        td {
+            vertical-align: middle;
+            padding: 15px 30px 15px 0;
+            font-size: $font-size;
+
+            &:last-child {
+                padding-right: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        tr:first-child td {
+            padding-top: 45px;
+        }
+        tr:last-child td {
+            border-bottom: 1px solid $bright_color;
+            padding-bottom: 45px;
         }
     }
-    &_dropdown {
-        background: $color;
-        position: absolute;
-        right: 0;
-        top: 100%;
-        opacity: 0;
-        transform: translate(0, -20px);
-        z-index: -1;
-        transition: .2s ease-in-out opacity,
-                    .2s ease-in-out transform,
-                    0s ease-in-out .2s z-index;
+    &_table-image {
+        margin: 0 30px 0 0;
+        float: left;
+    }
+    &_table-title {
+        @extend %heading-2;
+        margin: 0;
+    }
+    &_table-price {
+        @extend %heading-1;
+        position: relative;
+        padding: 0 30px 0 0;
 
-        .cart:hover & {
-            opacity: 1;
-            transform: translate(0, 0);
-            z-index: 1;
-            transition: .2s ease-in-out opacity,
-                        .2s ease-in-out transform,
-                        0s ease-in-out z-index;
+        sup {
+            font-size: 16px;
+            margin: 0 0 0 5px;
+            top: -14px;
+        }
+    }
+    &_table-delete {
+        background: #000 url("#{$img_path}/delete.svg") center center no-repeat;
+        height: 24px;
+        width: 24px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        transition: .2s ease-in-out background;
+
+        &:hover {
+            background-color: $bright_color;
+        }
+    }
+
+    &_forms {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 50px;
+    }
+    &_form {
+        width: 32%;
+    }
+    &_form-title {
+        @extend %heading-1;
+        color: $color;
+        letter-spacing: .03em;
+        margin-bottom: 0 0 20px;
+    }
+    &_form-price {
+        @extend %heading-1;
+        margin: 0;
+
+        sup {
+            font-size: 16px;
+            margin: 0 0 0 5px;
+            top: -14px;
         }
     }
 }

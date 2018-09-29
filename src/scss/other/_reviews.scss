@@ -1,0 +1,41 @@
+.reviews {
+    display: flex;
+    justify-content: space-between;
+
+    &_list {
+        width: 60%;
+    }
+    &_form {
+        width: 30%;
+    }
+    &_form-title {
+        @extend %heading-1;
+        text-align: center;
+        margin: 0 0 30px;
+    }
+}
+
+.review {
+    position: relative;
+
+    &_name {
+        color: $bright_color;
+        font: 16px/1 $font-family__heading;
+        margin: 0 0 15px;
+    }
+    &_date {
+        color: $gray_color;
+        font: 12px/1 $font-family__heading;
+        margin: 0 0 10px;
+    }
+    &_rating {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &_text {
+        p {
+            margin: 0 0 20px;
+        }
+    }
+}

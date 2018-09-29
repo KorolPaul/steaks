@@ -117,6 +117,7 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "form-elements/label";
 /* 2.6 Number */
 @import  "form-elements/number";
+@import  "form-elements/form";
 
 
 /*layout*/
@@ -203,6 +204,13 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "other/quotes-slider";
 @import  "other/dropdown";
 @import  "other/date";
+@import  "other/rating";
+@import  "other/reviews";
+@import  "other/cooks";
+@import  "other/about";
+@import  "other/contacts";
+@import  "other/map";
+@import  "other/checkout";
 
 
 /*Catalog*/
