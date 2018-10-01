@@ -11,6 +11,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: $color;
         text-align: center;
         height: 254px;
         width: 254px;
@@ -19,6 +20,10 @@
 
         &:nth-child(even) {
             background: rgba(255, 255, 255, .1);
+
+            .white-bg & {
+                background: url(#{$img_path}/bg.jpg) center;
+            }
         }
     }
     &_icon {

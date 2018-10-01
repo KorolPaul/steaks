@@ -1,41 +1,31 @@
 .counters {
     background: #ccc url(#{$img_path}/dark-bg.jpg) no-repeat;
     background-size: cover;
-    margin: 0 0 80px;
-    padding: 0 15px;
+    margin: 0 0 60px;
+    padding: 120px 0;
 
     &_holder {
-        @include tablet {
-            display: flex;
-            justify-content: space-between;
-        }
+        display: flex;
+        justify-content: space-between;
     }
     &_item {
         color: $color;
+        border: 2px solid $bright_color;
+        border-radius: 50%;
+        height: 160px;
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
-        padding: 30px 0;
-        @include tablet {
-            padding: 100px 0 90px;
-            width: 200px;
-        }
     }
     &_value {
         display: block;
-        font: bold 54px $font-family__heading;
-        margin: 0 0 20px;
+        font: bold 66px/1 $font-family__heading;
+        margin: 0 0 10px;
         position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            border-top: 1px solid $bright_color;
-            bottom: -3px;
-            left: 50%;
-            width: 30px;
-            transform: translate(-50%, 0);
-        }
     }
     &_title {
-        font: bold 26px/32px $font-family__heading;
+        font: bold 15px/1 $font-family__heading;
     }
 }

@@ -27,4 +27,16 @@
         right: 50%;
         transform: translate(150%, 0);
     }
+
+    .white-bg & {
+        color: #000;
+    }
+    .pattern-bg & {
+        background-image: url(#{$img_path}/steak-white.svg);
+
+        &::before,
+        &::after {
+            border-color: #fff;
+        }
+    }
 }

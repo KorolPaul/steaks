@@ -211,6 +211,8 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "other/contacts";
 @import  "other/map";
 @import  "other/checkout";
+@import  "other/action";
+@import  "other/promo";
 
 
 /*Catalog*/
@@ -224,6 +226,8 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "catalog/product";
 /* 5.5 Cart */
 @import  "catalog/cart-form";
+@import  "catalog/menu-list";
+
 
 
 /*Plugins*/

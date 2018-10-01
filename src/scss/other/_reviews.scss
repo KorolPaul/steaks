@@ -39,3 +39,29 @@
         }
     }
 }
+
+.reviews-slider {
+    padding: 0 0 35px;
+
+    &_item {
+        margin: 0 15px;
+    }
+    &_image {
+        border: 2px solid $bright_color;
+        border-radius: 50%;
+        margin: 0 auto 55px;
+        display: block;
+    }
+    &_content {
+        border: 2px solid $bright_color;
+        padding: 20px;
+        position: relative;
+
+        
+    }
+    &_name {
+        color: $color;
+        font-weight: bold;
+        line-height: 1;
+    }
+}
