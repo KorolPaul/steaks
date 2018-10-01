@@ -54,10 +54,38 @@
     }
     &_content {
         border: 2px solid $bright_color;
+        border-top: none;
         padding: 20px;
         position: relative;
 
-        
+        &::before {
+            content: '';
+            position: absolute;
+            border-top: 2px solid $bright_color;
+            left: 0;
+            top: 0;
+            right: 0;
+            clip: rect(auto, 82px, auto, auto);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            border-top: 2px solid $bright_color;
+            left: 0;
+            top: 0;
+            right: 0;
+            clip: rect(auto, auto, auto, 165px);
+        }
+    }
+    &_triangle {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        transform: rotate(45deg) translate(-69%, -2%);
+        border-top: 2px solid $bright_color;
+        border-left: 2px solid $bright_color;
+        left: 50%;
+        top: 0;
     }
     &_name {
         color: $color;

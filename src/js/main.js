@@ -27,4 +27,9 @@ $(window).on('load', function () {
         $('.tabs_tab[data-tab="'+ $(this).data('tab') +'"]').addClass('active');
     });
 
+    /* Widjet */
+    $('.cart-button, .widjet_close').on('click', function() {
+        $('.widjet').toggleClass('opened');
+    });
+
  });
