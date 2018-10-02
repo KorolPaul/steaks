@@ -7,6 +7,17 @@
     padding: 0 0 0 95px;
     position: relative;
     white-space: nowrap;
+    @include tablet {
+        height: 30px;
+        padding-left: 50px;
+        font-size: 18px;
+    }
+    @include mobile {
+        text-align: left;
+        display: block;
+        white-space: normal;
+        margin: 0 0 20px;
+    }
 
     &::before {
         content: '';
@@ -17,9 +28,16 @@
         position: absolute;
         left: 0;
         top: 0;
+        @include tablet {
+            width: 30px;
+            background-size: 50% auto;
+        }
     }
     &_value {
         font-size: 22px;
         margin: 0 5px;
+        @include tablet {
+            font-size: 20px;
+        }
     }
 }

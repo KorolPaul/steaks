@@ -10,6 +10,9 @@
     overflow: auto;
     transform: translateX(100%);
     transition: .3s ease-in-out transform;
+    @include mobile {
+        width: 100%;
+    }
 
     &.opened {
         transform: translate(0);
@@ -48,6 +51,10 @@
         @extend %button;
     }
     &_table {
+        @include mobile {
+            width: 100%;
+        }
+        
         td {
             padding: 30px 8px;
             border-bottom: 1px solid $bright_color;

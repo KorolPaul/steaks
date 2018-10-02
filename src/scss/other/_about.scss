@@ -1,5 +1,8 @@
 .about {
     margin: 0 0 60px;
+    @include mobile {
+        text-align: center;
+    }
     
     &_title {
         color: $color;
@@ -13,11 +16,18 @@
         .about__small & {
             text-align: left;
             margin-bottom: 30px;
+            @include mobile {
+                text-align: center;
+            }
         }
+        
     }
     &_link {
         color: $color;
         display: inline-block;
         margin: 8px 0 0;
+    }
+    &_image {
+        margin: 0 0 20px;
     }
 }

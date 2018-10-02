@@ -15,9 +15,6 @@
 
     &__inner {
         margin-left: 91px;
-        @include tablet {
-            margin-left: 110px;
-        }
     }
 
     &_avatar {
@@ -47,9 +44,6 @@
     }
     &_text {
         margin: 0 0 0 91px;
-        @include tablet {
-            margin: 0;
-        }
     }
 }
 

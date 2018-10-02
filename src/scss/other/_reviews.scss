@@ -1,12 +1,21 @@
 .reviews {
     display: flex;
     justify-content: space-between;
+    @include tablet {
+        display: block;
+    }
 
     &_list {
         width: 60%;
+        @include tablet {
+            width: 100%;
+        }
     }
     &_form {
         width: 30%;
+        @include tablet {
+            width: 100%;
+        }
     }
     &_form-title {
         @extend %heading-1;
@@ -45,6 +54,7 @@
 
     &_item {
         margin: 0 15px;
+        width: 247px;
     }
     &_image {
         border: 2px solid $bright_color;
@@ -55,37 +65,18 @@
     &_content {
         border: 2px solid $bright_color;
         border-top: none;
-        padding: 20px;
+        padding: 50px 20px 20px;
         position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            border-top: 2px solid $bright_color;
-            left: 0;
-            top: 0;
-            right: 0;
-            clip: rect(auto, 82px, auto, auto);
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            border-top: 2px solid $bright_color;
-            left: 0;
-            top: 0;
-            right: 0;
-            clip: rect(auto, auto, auto, 165px);
-        }
     }
     &_triangle {
+        padding: 50px 0 0;
+        background: url(#{$img_path}/card-arrow.svg) center bottom no-repeat;
+        background-size: 100% auto;
         position: absolute;
-        height: 60px;
-        width: 60px;
-        transform: rotate(45deg) translate(-69%, -2%);
-        border-top: 2px solid $bright_color;
-        border-left: 2px solid $bright_color;
-        left: 50%;
-        top: 0;
+        bottom: 100%;
+        left: -2px;
+        right: -2px;
+        transform: translate(0, 1px);
     }
     &_name {
         color: $color;

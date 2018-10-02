@@ -1,10 +1,16 @@
 .form {
     margin: 0 0 50px;
+    @include tablet {
+        margin-bottom: 20px;
+    }
 
     &_fields {
         border: 2px solid $bright_color;
         padding: 26px 55px;
-
+        @include tablet {
+            padding: 20px 30px;
+        }
+        
         &__small-indent {
             padding-left: 25px;
             padding-right: 25px;
@@ -17,6 +23,9 @@
         display: flex;
         justify-content: space-between;
         margin: 0 0 26px;
+        @include tablet {
+            display: block;
+        }
 
         &__indent {
             margin: -14px 0 10px;
@@ -27,6 +36,9 @@
     }
     &_item {
         width: 45%;
+        @include tablet {
+            width: 100%;
+        }
 
         &__wide {
             flex-basis: 100%;

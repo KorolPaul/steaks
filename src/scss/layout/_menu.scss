@@ -4,7 +4,19 @@
     right: 0;
     z-index: 1;
     padding: 0;
-    
+    @include tablet {
+        background: $bright_color;
+        left: 0;
+        top: 0;
+        padding: 80px 20px 0;
+        position: fixed;
+        z-index: 2;
+        display: none;
+    }
+
+    &.opened {
+        display: block;
+    }
 
     &_link {
         color: $color;
@@ -14,6 +26,12 @@
         display: inline-block;
         margin: 0 0 0 25px;
         position: relative;
+        @include tablet {
+            display: block;
+            padding: 16px 0;
+            margin: 0;
+            border-top: 1px solid $color;
+        }
 
         &:hover {
             color: $bright_color;
@@ -26,6 +44,9 @@
             left: 7px;
             right: 7px;
             border-bottom: 2px solid transparent;
+            @include tablet {
+                display: none;
+            }
         }
         &.active::after {
             border-color: $color;

@@ -38,5 +38,8 @@
     }
     &_item-text {
         text-align: center;
+        @include tablet {
+            text-align: left;
+        }
     }
 }

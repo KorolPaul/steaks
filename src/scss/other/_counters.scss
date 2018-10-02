@@ -3,10 +3,15 @@
     background-size: cover;
     margin: 0 0 60px;
     padding: 120px 0;
+    overflow: hidden;
+    @include tablet {
+        padding: 60px 0;
+    }
 
     &_holder {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     &_item {
         color: $color;
@@ -14,18 +19,29 @@
         border-radius: 50%;
         height: 160px;
         width: 160px;
+        margin: 0 10px 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        @include tablet {
+            height: 130px;
+            width: 130px;
+        }
     }
     &_value {
         display: block;
         font: bold 66px/1 $font-family__heading;
         margin: 0 0 10px;
         position: relative;
+        @include tablet {
+            font-size: 44px;
+        }
     }
     &_title {
         font: bold 15px/1 $font-family__heading;
+        @include tablet {
+            font-size: 12px;
+        }
     }
 }

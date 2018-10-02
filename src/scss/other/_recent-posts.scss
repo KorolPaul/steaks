@@ -7,6 +7,9 @@
     .footer & {
         border: none;
         padding: 0 10px 0 0;
+        @include tablet {
+            display: none;
+        }
     }
 
     &_title {

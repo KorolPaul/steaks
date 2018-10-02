@@ -1,16 +1,13 @@
 @charset "UTF-8";
 
 /*
-Theme Name: Tokenz
-Theme URI: https://www.templatemonster.com/wordpress-themes/tokenz
+Theme Name: Steaks
 Author: Korol Paul
 Author URI: https://github.com/KorolPaul/
 Description: Cool theme for wordpress
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: blog, custom-background, custom-colors
-Text Domain: tokenz
 */
 
 
@@ -31,59 +28,59 @@ Form elements
 2.4 Checkbox
 2.5 Label
 2.6 Number
+2.7 Standart form
 
 Layout
 3.0 Headings
 3.1 Header
 3.2 Footer
 3.3 Main menu
-3.4 Social
-3.5 Toggle menu button
-3.6 404 page
-3.7 Logo
-3.8 Currencies
-3.9 Cart
-3.10 Showcase
-3.11 Breadcrumbs
-3.12 Post
-3.13 Gallery
-3.14 Post navigation
-3.15 Comments
-3.16 Sidebar
-3.17 Content holder
-3.18 Tabs
-3.19 Slider
+3.4 Toggle menu button
+3.5 404 page
+3.6 Logo
+3.7 Cart
+3.8 Breadcrumbs
+3.9 Post
+3.10 Comments
+3.11 Sidebar
+3.12 Content holder
+3.13 Tabs
+3.14 Slider
+3.15 Widjet
 
 Other
- 4.0 Locatoin link
- 4.1 Phone number
- 4.2 Post meta
- 4.3 Tags
- 4.4 Share icons
- 4.5 Catalog categories
- 4.6 Subscribe form
- 4.7 Recent posts
- 4.8 Search
- 4.9 Filters
- 4.10 INfo
- 4.11 Pagination
- 4.12 Banner
- 4.13 Title
- 4.14 Signup steps
- 4.15 Account
- 4.16 Ribbons
- 4.17 Counters
- 4.18 Quotes slider
+4.0 Locatoin link
+4.1 Phone number
+4.2 Post meta
+4.3 Tags
+4.4 Catalog categories
+4.5 Recent posts
+4.6 Mini menu
+4.7 Search
+4.8 Pagination
+4.9 Title
+4.10 Counters
+4.11 Dropdown
+4.12 Date
+4.13 Rating
+4.13 Reviews
+4.14 Cooks
+4.15 About
+4.16 Contacts
+4.17 Map
+4.18 Checkout
+4.19 Action
+4.20 Promo
 
 Catalog
 5.1 Catalog
-5.2 Catalog grid
-5.3 Card
-5.4 Product
-5.5 Cart
+5.2 Card 
+5.3 Product
+5.4 Menu list
 
 Plugins styling
-
+6.1 Dropdown
+6.2 Slider plugin
 
 --------------------------------------------------------------*/
 
@@ -117,6 +114,7 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "form-elements/label";
 /* 2.6 Number */
 @import  "form-elements/number";
+/* 2.7 Standart form */
 @import  "form-elements/form";
 
 
@@ -129,38 +127,29 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "layout/footer";
 /* 3.3 Main menu */
 @import  "layout/menu";
-/* 3.4 Social */
-@import  "layout/social";
-/* 3.5 Toggle menu button */
+/* 3.4 Toggle menu button */
 @import  "layout/menu-toggle";
-/* 3.6 404 page */
+/* 3.5 404 page */
 @import  "layout/error-404";
-/* 3.7 Logo */
+/* 3.6 Logo */
 @import  "layout/logo";
-/* 3.8 Currencies */
-@import  "layout/currencies";
-/* 3.9 Cart */
+/* 3.7 Cart */
 @import  "layout/cart";
-/* 3.10 Showcase */
-@import  "layout/showcase";
-/* 3.11 Breadcrumbs */
+/* 3.8 Breadcrumbs */
 @import  "layout/breadcrumbs";
-/* 3.12 Post */
+/* 3.9 Post */
 @import  "layout/post";
-/* 3.13 Gallery */
-@import  "layout/gallery";  
-/* 3.14 Post navigation */
-@import  "layout/post-navigation";
-/* 3.15 Comments */
+/* 3.10 Comments */
 @import  "layout/comments";
-/* 3.16 Sidebar */
+/* 3.11 Sidebar */
 @import  "layout/sidebar";
-/* 3.17 Content holder */
+/* 3.12 Content holder */
 @import  "layout/content";
-/* 3.18 Tabs */
+/* 3.13 Tabs */
 @import  "layout/tabs";
-/* 3.19 Slider */
+/* 3.14 Slider */
 @import  "layout/slider";
+/* 3.15 Widjet */
 @import  "layout/widjet";
 
 
@@ -173,69 +162,59 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "other/meta";
 /* 4.3 Tags */
 @import  "other/tags";
-/* 4.4 Share icons */
-@import  "other/share";
-/* 4.5 Catalog categories */
+/* 4.4 Catalog categories */
 @import  "other/categories";
-/* 4.6 Subscribe form */
-@import  "other/subscribe";
-/* 4.7 Recent posts */
+/* 4.5 Recent posts */
 @import  "other/recent-posts";
+/* 4.6 Mini menu */
 @import  "other/mini-menu";
-/* 4.8 Search */
+/* 4.7 Search */
 @import  "other/search";
-/* 4.9 Filters */
-@import  "other/filters";
-/* 4.10 INfo */
-@import  "other/info";
-/* 4.11 Pagination */
+/* 4.8 Pagination */
 @import  "other/pages";
-/* 4.12 Banner */
-@import  "other/banner";
-/* 4.13 Title */
+/* 4.9 Title */
 @import  "other/title";
-/* 4.14 Signup steps */
-@import  "other/steps";
-/* 4.15 Account */
-@import  "other/account";
-/* 4.16 Ribbons */
-/* 4.17 Counters */
+/* 4.10 Counters */
 @import  "other/counters";
-/* 4.18 Quotes slider */
-@import  "other/quotes-slider";
+/* 4.11 Dropdown */
 @import  "other/dropdown";
+/* 4.12 Date */
 @import  "other/date";
+/* 4.13 Rating */
 @import  "other/rating";
+/* 4.13 Reviews */
 @import  "other/reviews";
+/* 4.14 Cooks */
 @import  "other/cooks";
+/* 4.15 About */
 @import  "other/about";
+/* 4.16 Contacts */
 @import  "other/contacts";
+/* 4.17 Map */
 @import  "other/map";
+/* 4.18 Checkout */
 @import  "other/checkout";
+/* 4.19 Action */
 @import  "other/action";
+/* 4.20 Promo */
 @import  "other/promo";
 
 
 /*Catalog*/
 /* 5.1 Catalog */
 @import  "catalog/catalog";
-/* 5.2 Catalog grid */
-@import  "catalog/catalog-grid";
-/* 5.3 Card */
+/* 5.2 Card */
 @import  "catalog/card";
-/* 5.4 Product */
+/* 5.3 Product */
 @import  "catalog/product";
-/* 5.5 Cart */
-@import  "catalog/cart-form";
+/* 5.4 Menu list */
 @import  "catalog/menu-list";
 
 
 
 /*Plugins*/
-/* 6.1 Range input */
-@import  "plugins/range";
 /* 6.1 Dropdown */
 @import  "plugins/chosen";
-/* 6.1 Slider plugin */
+/* 6.2 Slider plugin */
 @import  "plugins/slick";
 

@@ -2,6 +2,9 @@
     display: inline-block;
     position: relative;
     padding: 20px 0;
+    @include mobile {
+        padding: 10px 0 0;
+    }
 
     &_link {
         background: transparent;
@@ -10,6 +13,9 @@
         font-size: $font-size__small;
         padding: 0 20px 0 15px;
         position: relative;
+        @include tablet {
+            display: none;
+        }
 
         &::after {
             content: '';
@@ -36,6 +42,12 @@
         visibility: hidden;
         transition: .2s ease-in-out  opacity,
                     .0s ease-in-out .2s visibility;
+        @include tablet {
+            opacity: 1;
+            visibility: visible;
+            position: static;
+            background: transparent;
+        }
 
         .dropdown:hover & {
             opacity: 1;
@@ -50,9 +62,18 @@
         color: $bright_color;
         border-top: 1px solid $gray_color;
         text-decoration: none;
+        @include tablet {
+            color: $color;
+            padding: 0 0 0 10px;
+            border: none;
+            display: inline;
+        }
 
         &:first-child {
             border: none;
+            @include tablet {
+                color: $color;
+            }
         }
     }
 }

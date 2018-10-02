@@ -8,22 +8,37 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include tablet {
+            display: block;
+        }
     }
     &_image {
         flex-shrink: 0;
         transform: rotate(-45deg);
+        @include tablet {
+            display: block;
+            margin: 0 auto 20px;
+            transform: none;
+        }
     }
     &_content {
         padding: 0 0 0 5%;
         text-align: right;
+        @include tablet {
+            text-align: center;
+        }
     }
     &_title {
         font: bold 22px/28px $font-family__heading;
+        
     }
     &_subtitle {
         color: #000;
         font: 18px/28px $font-family;
         margin: 25px 0;
+        @include tablet {
+            margin: 10px 0;
+        }
     }
     &_price {
         font-size: 24px;

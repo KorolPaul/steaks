@@ -1,7 +1,13 @@
 .cart {
     
+    &_table-wrapper {
+        overflow: auto;
+    }
     &_table {
         width: 100%;
+        @include tablet {
+            min-width: 680px;
+        }
 
         th {
             border-bottom: 1px solid $bright_color;
@@ -9,11 +15,17 @@
             font: 600 $font-size $font-family__heading;
             padding: 0 30px 40px 0;
             text-transform: uppercase;
+            @include tablet {
+                padding: 0 15px 20px 0;
+            }
         }
         td {
             vertical-align: middle;
             padding: 15px 30px 15px 0;
             font-size: $font-size;
+            @include tablet {
+                padding: 0 15px 15px 0;
+            }
 
             &:last-child {
                 padding-right: 0;
@@ -24,15 +36,24 @@
         }
         tr:first-child td {
             padding-top: 45px;
+            @include tablet {
+                padding-top: 25px;
+            }
         }
         tr:last-child td {
             border-bottom: 1px solid $bright_color;
             padding-bottom: 45px;
+            @include tablet {
+                padding-bottom: 25px;
+            }
         }
     }
     &_table-image {
         margin: 0 30px 0 0;
         float: left;
+        @include tablet {
+            display: none;
+        }
     }
     &_table-title {
         @extend %heading-2;
@@ -42,11 +63,18 @@
         @extend %heading-1;
         position: relative;
         padding: 0 30px 0 0;
+        white-space: nowrap;
+        @include tablet {
+            font-size: 20px;
+        }
 
         sup {
             font-size: 16px;
             margin: 0 0 0 5px;
             top: -14px;
+            @include tablet {
+                font-size: 14px;
+            }
         }
     }
     &_table-delete {
@@ -71,9 +99,15 @@
         display: flex;
         justify-content: space-between;
         margin: 0 0 50px;
+        @include tablet {
+            flex-wrap: wrap;
+        }
     }
     &_form {
         width: 32%;
+        @include tablet {
+            width: 100%;
+        }
     }
     &_form-title {
         @extend %heading-1;

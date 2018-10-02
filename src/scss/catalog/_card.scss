@@ -7,6 +7,12 @@
     padding: 28px 15px;
     width: 30%;
     transition: .2s ease-in-out box-shadow;
+    @include tablet {
+        width: 48%;
+    }
+    @include mobile {
+        width: 100%;
+    }
 
     &:hover {
         text-decoration: none;

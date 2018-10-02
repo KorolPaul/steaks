@@ -3,14 +3,9 @@ $(window).on('load', function () {
     /* Menu toggle */
     $('.menu-toggle').on('click', function(e) {
         e.preventDefault();
-        $(this).next().toggleClass('opened');
+        $('.menu').toggleClass('opened');
+        $(this).toggleClass('opened');
     });
-
-    $('.menu').on('click', '.menu_list-item__parent > a', function(e) {
-        e.preventDefault();
-        $(this).next().toggleClass('opened');
-    });
-
 
     /* Dropdown */
     $("select:visible").chosen({

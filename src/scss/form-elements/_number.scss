@@ -4,6 +4,10 @@
     align-items: center;
     width: 75px;
     
+    &__big {
+        width: auto;
+    }
+    
     &_button {
         background: transparent;
         border: 2px solid $gray_color;
@@ -68,6 +72,10 @@
             color: $bright_color;
             font: bold 28px $font-family__heading;
             width: 45px;
+            @include tablet {
+                font-size: 18px;
+                width: 30px;
+            }
         }
     }
 }
