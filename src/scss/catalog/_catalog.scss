@@ -1,4 +1,8 @@
 .catalog {
+    margin: 0 0 60px;
+    @include tablet {
+        margin: 0 0 40px;
+    }
 
     &_header {
         border-bottom: 1px solid $bright_color;

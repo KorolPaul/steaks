@@ -4,6 +4,7 @@
     margin: 0 0 60px;
     padding: 120px 0;
     overflow: hidden;
+    position: relative;
     @include tablet {
         padding: 60px 0;
     }
@@ -43,5 +44,13 @@
         @include tablet {
             font-size: 12px;
         }
+    }
+    &_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }

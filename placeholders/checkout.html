@@ -2,13 +2,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Checkout</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
     <meta content="telephone=no" name="format-detection">
     <meta name="HandheldFriendly" content="true">
     <meta property="og:title" content="#{data.title}">
@@ -16,7 +16,7 @@
     <meta property="og:url" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
-    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:type" content="image/jp eg">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="300">
     <meta property="twitter:description" content="">
@@ -77,9 +77,9 @@
                     <a href="contacts.html" class="menu_link">CONTACTS</a>
                 </nav>
             </div>
-            <img class="header_bottom-image" src="src/img/images/menu-header.jpg" alt="">
+            <img class="header_bottom-image" src="../src/img/dark-bg.jpg" alt="">
             <div class="header_bottom-showcase">
-                <h1 class="header_bottom-title">Log in</h1>
+                <h1 class="header_bottom-title">STEAK HOUSE CHECKOUT</h1>
             </div>
             <button class="cart-button">
                 <div class="cart-button_value">3</div>
@@ -92,47 +92,78 @@
                 <div class="col">
                     <div class="breadcrumbs">
                         <a href="" class="breadcrumbs_link">Home</a>
-                        <span class="breadcrumbs_page">Log in</span>
+                        <span class="breadcrumbs_page">Checkout</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container checkout">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="checkout_header">
+                        <a class="checkout_back" href="/cart.html">
+                            << BACK TO CART</a> <span>
+                                Are you registered?
+                                <a href="/login.html"> Click here to login</a>
+                                </span>
+                    </div>
+                </div>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
-                    <p class="title">sign in</p>
+                    <p class="checkout_title">YOUR ORDER</p>
                     <form action="" class="form">
                         <div class="form_fields">
                             <div class="form_fields-row">
                                 <div class="form_item form_item__wide">
-                                    <label for="">E-mail*</label>
-                                    <input type="email" class="form_field">
+                                    <table class="checkout_table">
+                                        <thead>
+                                            <tr>
+                                                <th>steak</th>
+                                                <th>total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Steak “Norten Crow” <span class="checkout_bright">x 2</span></td>
+                                                <td>$ 25 <sup>80</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Steak “Ribeye” <span class="checkout_bright">x 1</span></td>
+                                                <td>$ 12 <sup>90</sup></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>Shipping</td>
+                                                <td>$ 0 <sup>00</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Promotional code</td>
+                                                <td><span class="checkout_bright">$ -3 <sup>00</sup></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="checkout_payment">
+                                        <p class="checkout_subtitle">PAYMENT METHODS</p>
+                                        <div class="checkout_payment-item">
+                                            <input type="radio" id="payment-1" name="payment" checked>
+                                            <label class="checkout_payment-label" for="payment-1">Payment order in cash</label>
+                                        </div>
+                                        <div class="checkout_payment-item">
+                                            <input type="radio" id="payment-2" name="payment">
+                                            <label class="checkout_payment-label" for="payment-2">PayPal</label>
+                                        </div>
+                                        <div class="checkout_payment-item">
+                                            <img src="../src/img/payment.png" alt="">
+                                            <a href="#" class="checkout_payment-link">What is paypal?</a>
+                                        </div>
+                                    </div>
+                                    <p class="checkout_price">Order Total: $ 64<sup>80</sup></p>
                                 </div>
                             </div>
-                            <div class="form_fields-row">
-                                <div class="form_item form_item__wide">
-                                    <label for="">Password</label>
-                                    <input type="password" class="form_field">
-                                </div>
-                            </div>
-                            <div class="form_fields-row form_fields-row__indent">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">Remember me</label>
-                                <a href="#">Lost your password</a>
-                            </div>
-                            <div class="form_fields-row">
-                                <button class="button">log in</button>
-                            </div>
-                            <div class="form_fields-row">
-                                <span class="form_social">
-                                    Log in via social networks:
-                                    <a href="#" class="form_social-icon">
-                                        <img src="src/img/social/tw-small.png" alt="">
-                                    </a>
-                                    <a href="#" class="form_social-icon">
-                                        <img src="src/img/social/fb-small.png" alt="">
-                                    </a>
-                                </span>
+                            <div class="form_item">
+                                <button class="button">checkout</button>
                             </div>
                         </div>
                     </form>
@@ -144,7 +175,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer_column col-12 col-lg-4">
-                    <img class="footer_logo" src="src/img/logo.png" alt="">
+                    <img class="footer_logo" src="../src/img/logo.png" alt="">
                     <p>Hi! My name is John Smith and I am the owner of a family steak house "" Fed cowboy. "Cooking
                         steaks for us it is the business of life. Even my grandfather grilled steaks are excellent.
                         Some recipes steaks are preserved from those times and for them we are preparing our meals.</p>
@@ -155,19 +186,19 @@
                     <div class="recent-posts">
                         <p class="recent-posts_title">Recent posts</p>
                         <a href="#" class="recent-posts_item">
-                            <img src="src/img/images/post-mini-1.jpg" alt="" class="recent-posts_item-image">
+                            <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
                             <span class="recent-posts_item-title">How to cook the perfect steak</span>
                             <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Quas temporibus esse illo doloribus maiores </p>
                         </a>
                         <a href="#" class="recent-posts_item">
-                            <img src="src/img/images/post-mini-2.jpg" alt="" class="recent-posts_item-image">
+                            <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
                             <span class="recent-posts_item-title">Recipe Ribeye steak</span>
                             <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Quas temporibus esse illo doloribus maiores </p>
                         </a>
                         <a href="#" class="recent-posts_item">
-                            <img src="src/img/images/post-mini-3.jpg" alt="" class="recent-posts_item-image">
+                            <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
                             <span class="recent-posts_item-title">Choosing the right meat for steak</span>
                             <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Quas temporibus esse illo doloribus maiores </p>
@@ -178,23 +209,23 @@
                     <p class="footer_title">Follow us</p>
                     <div class="footer_instagram">
                         <p class="footer_subtitle">Our instagram</p>
-                        <img src="src/img/images/instagram.jpg" alt="">
+                        <img src=" https://via.placeholder.com/340x360" alt="">
                     </div>
                     <div class="footer_social">
                         <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/tw.png" alt="">
+                            <img src="../src/img/social/tw.png" alt="">
                         </a>
                         <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/fb.png" alt="">
+                            <img src="../src/img/social/fb.png" alt="">
                         </a>
                         <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/g+.png" alt="">
+                            <img src="../src/img/social/g+.png" alt="">
                         </a>
                         <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/insta.png" alt="">
+                            <img src="../src/img/social/insta.png" alt="">
                         </a>
                         <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/ln.png" alt="">
+                            <img src="../src/img/social/ln.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -208,7 +239,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <img src="src/img/images/steak-small.png" alt="" class="widjet_table-image">
+                        <img src=" https://via.placeholder.com/100x100" alt="" class="widjet_table-image">
                     </td>
                     <td>
                         <p class="widjet_table-title">
@@ -220,7 +251,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="src/img/images/steak-small.png" alt="" class="widjet_table-image">
+                        <img src=" https://via.placeholder.com/100x100" alt="" class="widjet_table-image">
                     </td>
                     <td>
                         <p class="widjet_table-title">
@@ -232,7 +263,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="src/img/images/steak-small.png" alt="" class="widjet_table-image">
+                        <img src=" https://via.placeholder.com/100x100" alt="" class="widjet_table-image">
                     </td>
                     <td>
                         <p class="widjet_table-title">
@@ -254,11 +285,11 @@
         </div>
     </div>
 
-    <script src="src/js/jquery-3.3.1.min.js"></script>
-    <script src="src/js/bootstrap-slider.min.js"></script>
-    <script src="src/js/chosen.jquery.min.js"></script>
-    <script src="src/js/slick.js"></script>
-    <script src="src/js/main.js"></script>
+    <script src="../src/js/jquery-3.3.1.min.js"></script>
+    <script src="../src/js/bootstrap-slider.min.js"></script>
+    <script src="../src/js/chosen.jquery.min.js"></script>
+    <script src="../src/js/slick.js"></script>
+    <script src="../src/js/main.js"></script>
 </body>
 
 </html>
